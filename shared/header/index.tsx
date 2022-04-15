@@ -1,11 +1,15 @@
 import StyledHeader from './styles';
+import { CenterWrapper } from '@/shared';
 
 const Header = () => {
   return (
     <StyledHeader>
-      <h1>Header</h1>
+      <CenterWrapper>
+        <h1>Header</h1>
+        <p>teste</p>
+      </CenterWrapper>
     </StyledHeader>
   );
-}
+};
 
 export default Header;
