@@ -48,24 +48,24 @@ export const InnerWrapper = styled.div`
     padding-right: 15px;
   }
   @media ${device.tablet} {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   @media ${device.laptop} {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
   @media ${device.laptopL} { 
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 140px;
+    padding-right: 140px;
   }
   @media ${device.desktop} {
-    padding-left: 105px;
-    padding-right: 105px;
+    padding-left: 280px;
+    padding-right: 280px;
   }
   @media ${device.desktopL} {
-    padding-left: 185px;
-    padding-right: 185px;
+    padding-left: 560px;
+    padding-right: 560px;
   }
 `;
 
