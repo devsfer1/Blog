@@ -1,6 +1,10 @@
 import { Wrapper, InnerWrapper } from './styles'
 
-const CenterWrapper = (props) => {
+type CenterWrapperProps = {
+  children: React.ReactNode
+}
+
+const CenterWrapper = (props: CenterWrapperProps) => {
   const { children } = props
 
   return (
