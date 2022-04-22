@@ -1,5 +1,6 @@
 import { HeaderWrapper, HeaderInnerWrapper, HeaderLink } from './styles';
 import { CenterWrapper } from '@/shared';
+import Link from 'next/link';
 
 const headerItems = [
   { id: 1, name: 'Home' },
@@ -15,9 +16,9 @@ const Header = () => {
         <HeaderInnerWrapper>
           <h1>Header</h1>
           {headerItems.map((item, index) => (
-            <HeaderLink href='/' key={index}>
-              {item.name}
-            </HeaderLink>
+            <Link key={index} href={'/'} passHref>
+              <HeaderLink>{item.name}</HeaderLink>
+            </Link>
           ))}
         </HeaderInnerWrapper>
       </CenterWrapper>
