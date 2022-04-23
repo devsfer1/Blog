@@ -14,7 +14,7 @@ const Header = () => {
     <HeaderWrapper>
       <CenterWrapper>
         <HeaderInnerWrapper>
-          <h1>Header</h1>
+          <Link href={'/'}>Header</Link>
           {headerItems.map((item, index) => (
             <Link key={index} href={'/'} passHref>
               <HeaderLink>{item.name}</HeaderLink>

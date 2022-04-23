@@ -8,10 +8,11 @@ import { CenterWrapper, Page, Post } from '@/shared';
 const Home: NextPage = ({ posts }) => {
   return (
     <>
-      <Page title={'Home | Blog'} />
-      {posts.map((post, index) => (
-        <Post key={index} post={post} />
-      ))}
+      <Page title={'Home | Blog'}>
+        {posts.map((post, index) => (
+          <Post key={index} post={post} />
+        ))}
+      </Page>
     </>
   );
 };

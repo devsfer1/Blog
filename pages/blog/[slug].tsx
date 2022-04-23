@@ -1,3 +1,4 @@
+import { Page } from '@/shared';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -10,7 +11,7 @@ const PostPage = ({
   content,
 }) => {
   return (
-    <>
+    <Page title={title}>
       <Link href='/'>
         <a className='btn btn-back'>Go Back</a>
       </Link>
@@ -22,7 +23,7 @@ const PostPage = ({
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
-    </>
+    </Page>
   );
 };
 
