@@ -4,8 +4,7 @@ const nextConfig = {
   ignoreBuildErrors: true,
   typescript: {
     ignoreBuildErrors: true,
-  },
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
+  }
 }
 
 
