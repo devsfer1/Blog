@@ -4,14 +4,17 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { CenterWrapper, Page, Post } from '@/shared';
+import { Wrapper } from './styles';
 
 const Home: NextPage = ({ posts }) => {
   return (
     <>
       <Page title={'Home | Blog'}>
-        {posts.map((post, index) => (
-          <Post key={index} post={post} />
-        ))}
+        <Wrapper>
+          {posts.map((post, index) => (
+            <Post key={index} post={post} />
+          ))}
+        </Wrapper>
       </Page>
     </>
   );

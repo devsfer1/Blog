@@ -1,8 +1,8 @@
 ---
-title: 'Django Crash Course'
+title: 'Vue Crash Course'
 date: 'March 5, 2021'
 excerpt: 'To check for null in React, use a comparison to check if the value is equal or is not equal to `null`, e.g. `if (myValue === null) {}` or `if (myValue !== null) {}`. If the con...'
-cover_image: '/images/posts/django.png'
+cover_image: '/images/posts/vue.jpg'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

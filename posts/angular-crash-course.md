@@ -1,8 +1,8 @@
 ---
-title: 'Django Crash Course'
+title: 'Angular Crash Course'
 date: 'March 5, 2021'
-excerpt: 'To check for null in React, use a comparison to check if the value is equal or is not equal to `null`, e.g. `if (myValue === null) {}` or `if (myValue !== null) {}`. If the con...'
-cover_image: '/images/posts/django.png'
+excerpt: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...'
+cover_image: '/images/posts/angular.png'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
