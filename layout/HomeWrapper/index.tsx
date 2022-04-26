@@ -1,11 +1,7 @@
-import { Wrapper } from './styles'
+import { Wrapper } from './styles';
 
-const Home = ({ children }) => {
-  return (
-    <Wrapper>
-      {children}
-    </Wrapper>
-  )
-}
+const HomeWrapper = ({ children }) => {
+  return <Wrapper>{children}</Wrapper>;
+};
 
-export default Home;
+export default HomeWrapper;

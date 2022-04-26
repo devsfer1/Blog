@@ -56,8 +56,8 @@ export const InnerWrapper = styled.div`
     padding-right: 70px;
   }
   @media ${device.laptopL} { 
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 190px;
+    padding-right: 190px;
   }
   @media ${device.desktop} {
     padding-left: 280px;

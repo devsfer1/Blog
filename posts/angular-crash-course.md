@@ -1,8 +1,10 @@
 ---
 title: 'Angular Crash Course'
 date: 'March 5, 2021'
+tag: 'Angular'
 excerpt: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...'
 cover_image: '/images/posts/angular.png'
+time: '2 min'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

@@ -13,11 +13,10 @@ export const Page = ({ title, children }: PageProps) => {
     <>
       <Head>
         <title>{title}</title>
+        <link rel='icon' href='/logo.png' />
       </Head>
       <Header />
-      <CenterWrapper>
-        {children}
-      </CenterWrapper>
+      <CenterWrapper>{children}</CenterWrapper>
     </>
   );
 };

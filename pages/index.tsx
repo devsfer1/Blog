@@ -4,16 +4,19 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { CenterWrapper, Page, Post } from '@/shared';
-import { HomeWrapper } from '@/layout';
+import { HomeWrapper, HomeInnerWrapper, HomeDescription } from '@/layout';
 
 const Home: NextPage = ({ posts }) => {
   return (
     <>
       <Page title={'Home | Blog'}>
         <HomeWrapper>
-          {posts.map((post, index) => (
-            <Post key={index} post={post} />
-          ))}
+          <HomeDescription />
+          <HomeInnerWrapper>
+            {posts.map((post, index) => (
+              <Post key={index} post={post} />
+            ))}
+          </HomeInnerWrapper>
         </HomeWrapper>
       </Page>
     </>
