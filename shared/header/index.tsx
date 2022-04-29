@@ -5,8 +5,10 @@ import {
   HeaderLink,
   LogoWrapper,
   Bar,
+  SearchButton,
 } from './styles';
 import { CenterWrapper } from '@/shared';
+import { BiSearch } from 'react-icons/bi';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -59,6 +61,7 @@ const Header = () => {
                 <HeaderLink>{item.name}</HeaderLink>
               </Link>
             ))}
+            <SearchButton onClick={() => {console.log('olá mundo')}} />
           </HeaderInnerWrapper>
         </CenterWrapper>
       </HeaderWrapper>

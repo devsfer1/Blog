@@ -15,7 +15,7 @@ export const PostWrapper = styled.a`
 
 export const PostImageWrapper = styled.div`
   width: 100%;
-  height: 190px;
+  height: 230px;
   position: relative;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -29,7 +29,7 @@ export const PostImage = styled(Image)`
 
 export const PostTagWrapper = styled.div`
   background-color: #f5f5f5;
-  padding: 5px;
+  padding: 10px;
   width: 30%;
   border-radius: 8px;
 `
@@ -45,7 +45,7 @@ export const PostTag = styled.p`
 export const PostContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   
   padding: 15px;
   background-color: white;

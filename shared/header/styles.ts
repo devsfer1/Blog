@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Search } from '@styled-icons/boxicons-regular';
 
 export const HeaderWrapper = styled.header`
   background-color: rgba(255, 255, 255, 1);
@@ -32,9 +32,17 @@ export const LogoWrapper = styled.a`
 export const Bar = styled.div`
   position: fixed;
   z-index: 999;
-  top: 10.8%;
+  top: 9.9%;
   height: 6px;
   border-radius: 0px 2px 0px 0px;
   background: #fa5f5f;
   transition: all 0.3s ease-in-out;
+`;
+
+export const SearchButton = styled(Search)`
+  color: #D72323;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  cursor: pointer;
 `;

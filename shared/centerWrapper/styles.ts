@@ -30,6 +30,7 @@ export const Wrapper = styled.div`
 
 export const InnerWrapper = styled.div`
   display: flex;
+  justify-content: center;
   flex: 1;
   width: 100%;
   margin: auto;
@@ -64,8 +65,8 @@ export const InnerWrapper = styled.div`
     padding-right: 280px;
   }
   @media ${device.desktopL} {
-    padding-left: 560px;
-    padding-right: 560px;
+    padding-left: 660px;
+    padding-right: 660px;
   }
 `;
 
