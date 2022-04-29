@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Search } from '@styled-icons/boxicons-regular';
 
+
+
 export const HeaderWrapper = styled.header`
   background-color: rgba(255, 255, 255, 1);
   /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
@@ -21,6 +23,7 @@ export const HeaderInnerWrapper = styled.div`
 export const HeaderLink = styled.a`
   color: #943434;
   font-weight: 600;
+  font-size: 18px;
 `
 
 export const LogoWrapper = styled.a`

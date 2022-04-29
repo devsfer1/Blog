@@ -2,15 +2,18 @@ import styled from 'styled-components';
 
 
 export const Wrapper = styled.div`
-  margin-top: 180px;
+  margin-top: 220px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Title = styled.h1`
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #D72323;
   text-align: center;
-  text-transform: uppercase
+  /* text-transform: uppercase */
 `
 
 export const Description = styled.h3`

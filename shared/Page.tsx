@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header';
+import Footer from './footer';
 import CenterWrapper from './centerWrapper';
 import Head from 'next/head';
 
@@ -17,6 +18,7 @@ export const Page = ({ title, children }: PageProps) => {
       </Head>
       <Header />
       <CenterWrapper>{children}</CenterWrapper>
+      <Footer />
     </>
   );
 };
