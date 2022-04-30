@@ -7,16 +7,17 @@ import Head from 'next/head';
 type PageProps = {
   title: string;
   children: React.ReactNode;
+  setShowSearchOverlay: (showSearchOverlay: boolean) => void;
 };
 
-export const Page = ({ title, children }: PageProps) => {
+export const Page = ({ title, children, setShowSearchOverlay }: PageProps) => {
   return (
     <>
       <Head>
         <title>{title}</title>
         <link rel='icon' href='/logo.png' />
       </Head>
-      <Header />
+      <Header setShowSearchOverlay={setShowSearchOverlay} />
       <CenterWrapper>{children}</CenterWrapper>
       <Footer />
     </>

@@ -10,8 +10,8 @@ export const View = styled.div`
 export const HeaderWrapper = styled.header`
   background-color: rgba(255, 255, 255, 1);
   /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   position: fixed;
   width: 100%;
   z-index: 9999;

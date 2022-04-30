@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { CenterWrapper, Page, Post } from '@/shared';
+import { CenterWrapper, Page, Post, SearchOverlay, Pagination } from '@/shared';
 import { HomeWrapper, HomeInnerWrapper, HomeDescription } from '@/layout';
 
 const Home: NextPage = ({ posts }) => {
+
+  const [showSearchOverlay, setShowSearchOverlay] = useState(false);
+
   return (
     <>
-      <Page title={'Home | Blog'}>
+      <Page title={'Home | Blog'} setShowSearchOverlay={setShowSearchOverlay}>
         <HomeWrapper>
           <HomeDescription />
           <HomeInnerWrapper>
@@ -17,8 +20,10 @@ const Home: NextPage = ({ posts }) => {
               <Post key={index} post={post} />
             ))}
           </HomeInnerWrapper>
+          <Pagination />
         </HomeWrapper>
       </Page>
+      <SearchOverlay active={showSearchOverlay} />
     </>
   );
 };

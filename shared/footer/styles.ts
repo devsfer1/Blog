@@ -4,7 +4,7 @@ import { Envelope } from '@styled-icons/boxicons-regular';
 
 export const Wrapper = styled.div`
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 60px 20px;
   margin-top: 120px;
 `;
 

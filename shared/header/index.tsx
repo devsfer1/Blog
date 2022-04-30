@@ -41,7 +41,7 @@ const ReadingBar = () => {
   return <Bar style={{ width: width + '%' }}></Bar>;
 };
 
-const Header = () => {
+const Header = ({ setShowSearchOverlay }) => {
   return (
     <>
       <HeaderWrapper>
@@ -65,7 +65,7 @@ const Header = () => {
               ))}
               <SearchButton
                 onClick={() => {
-                  console.log('olá mundo');
+                  setShowSearchOverlay(true);
                 }}
               />
             </HeaderInnerWrapper>
