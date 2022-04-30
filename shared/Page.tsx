@@ -1,25 +1,26 @@
 import React from 'react';
 import Header from './header';
 import Footer from './footer';
+import SearchOverlay from './searchOverlay';
 import CenterWrapper from './centerWrapper';
 import Head from 'next/head';
 
 type PageProps = {
   title: string;
   children: React.ReactNode;
-  setShowSearchOverlay: (showSearchOverlay: boolean) => void;
 };
 
-export const Page = ({ title, children, setShowSearchOverlay }: PageProps) => {
+export const Page = ({ title, children }: PageProps) => {
   return (
     <>
       <Head>
         <title>{title}</title>
         <link rel='icon' href='/logo.png' />
       </Head>
-      <Header setShowSearchOverlay={setShowSearchOverlay} />
+      <Header />
       <CenterWrapper>{children}</CenterWrapper>
       <Footer />
+      <SearchOverlay />
     </>
   );
 };

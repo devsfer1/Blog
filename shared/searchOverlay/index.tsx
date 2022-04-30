@@ -1,11 +1,18 @@
 import { Wrapper, CloseButton } from './styles';
+import { useSelector } from 'react-redux';
+import { searchOverlay, toggleOverlay } from '../../redux/searchSlice';
+import { useDispatch } from 'react-redux';
 
-const SearchOverlay = ({ active }) => {
+
+const SearchOverlay = () => {
+  const active = useSelector(searchOverlay);
+  const dispatch = useDispatch();
+
   return (
     <Wrapper active={active}>
-      <CloseButton  />
+      <CloseButton onClick={() => dispatch(toggleOverlay())}/>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default SearchOverlay
+export default SearchOverlay;

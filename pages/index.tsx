@@ -8,11 +8,9 @@ import { HomeWrapper, HomeInnerWrapper, HomeDescription } from '@/layout';
 
 const Home: NextPage = ({ posts }) => {
 
-  const [showSearchOverlay, setShowSearchOverlay] = useState(false);
-
   return (
     <>
-      <Page title={'Home | Blog'} setShowSearchOverlay={setShowSearchOverlay}>
+      <Page title={'Home | Blog'} >
         <HomeWrapper>
           <HomeDescription />
           <HomeInnerWrapper>
@@ -23,7 +21,6 @@ const Home: NextPage = ({ posts }) => {
           <Pagination />
         </HomeWrapper>
       </Page>
-      <SearchOverlay active={showSearchOverlay} />
     </>
   );
 };

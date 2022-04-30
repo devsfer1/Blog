@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
     "@types/marked": "^4.0.3",
     "@types/styled-components": "^5.1.25",
     "gray-matter": "^4.0.3",
@@ -19,6 +20,7 @@
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
     "react-is": "^18.0.0",
+    "react-redux": "^8.0.1",
     "styled-components": "^5.3.5",
     "styled-icons": "^10.45.0"
   },

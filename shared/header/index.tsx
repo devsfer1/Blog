@@ -11,8 +11,10 @@ import {
 } from './styles';
 import { CenterWrapper } from '@/shared';
 import { BiSearch } from 'react-icons/bi';
+import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import Image from 'next/image';
+import { toggleOverlay } from '../../redux/searchSlice';
 
 const headerItems = [
   { id: 1, name: 'Home' },
@@ -41,7 +43,9 @@ const ReadingBar = () => {
   return <Bar style={{ width: width + '%' }}></Bar>;
 };
 
-const Header = ({ setShowSearchOverlay }) => {
+const Header = () => {
+  const dispatch = useDispatch();
+
   return (
     <>
       <HeaderWrapper>
@@ -65,7 +69,7 @@ const Header = ({ setShowSearchOverlay }) => {
               ))}
               <SearchButton
                 onClick={() => {
-                  setShowSearchOverlay(true);
+                  dispatch(toggleOverlay());
                 }}
               />
             </HeaderInnerWrapper>
