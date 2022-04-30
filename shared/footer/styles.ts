@@ -11,7 +11,8 @@ export const Wrapper = styled.div`
 export const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+  align-items: center;
 `
 
 export const SocialWrapper = styled.div`
@@ -49,4 +50,8 @@ export const EmailLink = styled(Envelope)`
   width: 30px;
   height: 30px;
   color: #c4c4c4;
+`
+
+export const CopyRight = styled.p`
+  color: #943434;
 `

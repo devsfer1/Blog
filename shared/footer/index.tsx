@@ -7,6 +7,7 @@ import {
   GithubLink,
   LinkedinLink,
   EmailLink,
+  CopyRight,
 } from './styles';
 import Link from 'next/link';
 import { CenterWrapper } from '@/shared';
@@ -35,6 +36,9 @@ const Footer = () => {
               </Link>
             ))}
           </LinksWrapper>
+          <CopyRight>
+            © {new Date().getFullYear()} Bear Code Blog. All rights reserved.
+          </CopyRight>
         </InnerWrapper>
       </CenterWrapper>
     </Wrapper>
