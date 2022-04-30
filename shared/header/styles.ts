@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { Search } from '@styled-icons/boxicons-regular';
 
 
+export const View = styled.div`
+    display: flex;
+    position: relative;
+`
 
 export const HeaderWrapper = styled.header`
   background-color: rgba(255, 255, 255, 1);
@@ -13,11 +17,16 @@ export const HeaderWrapper = styled.header`
   z-index: 9999;
 `;
 
+export const HeaderRelative = styled.div`
+  position: relative;
+`
+
 export const HeaderInnerWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
   gap: 40px;
+  position: relative;
 `
 
 export const HeaderLink = styled.a`
@@ -33,13 +42,13 @@ export const LogoWrapper = styled.a`
 `
 
 export const Bar = styled.div`
-  position: fixed;
-  z-index: 999;
-  top: 9.9%;
+  position: absolute;
+  bottom: -15%;
   height: 6px;
   border-radius: 0px 2px 0px 0px;
   background: #fa5f5f;
   transition: all 0.3s ease-in-out;
+  /* width: 100vw; */
 `;
 
 export const SearchButton = styled(Search)`

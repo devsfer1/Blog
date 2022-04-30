@@ -3,9 +3,11 @@ import {
   HeaderWrapper,
   HeaderInnerWrapper,
   HeaderLink,
+  HeaderRelative,
   LogoWrapper,
   Bar,
   SearchButton,
+  View,
 } from './styles';
 import { CenterWrapper } from '@/shared';
 import { BiSearch } from 'react-icons/bi';
@@ -43,29 +45,34 @@ const Header = () => {
   return (
     <>
       <HeaderWrapper>
-        <CenterWrapper>
-          <HeaderInnerWrapper>
-            <Link href={`/`} passHref>
-              <LogoWrapper>
-                <Image
-                  src={'/logo-text.png'}
-                  layout='fill'
-                  alt={'logo'}
-                  objectFit='cover'
-                />
-              </LogoWrapper>
-            </Link>
-
-            {headerItems.map((item, index) => (
-              <Link key={index} href={'/'} passHref>
-                <HeaderLink>{item.name}</HeaderLink>
+        <HeaderRelative>
+          <CenterWrapper>
+            <HeaderInnerWrapper>
+              <Link href={`/`} passHref>
+                <LogoWrapper>
+                  <Image
+                    src={'/logo-text.png'}
+                    layout='fill'
+                    alt={'logo'}
+                    objectFit='cover'
+                  />
+                </LogoWrapper>
               </Link>
-            ))}
-            <SearchButton onClick={() => {console.log('olá mundo')}} />
-          </HeaderInnerWrapper>
-        </CenterWrapper>
+              {headerItems.map((item, index) => (
+                <Link key={index} href={'/'} passHref>
+                  <HeaderLink>{item.name}</HeaderLink>
+                </Link>
+              ))}
+              <SearchButton
+                onClick={() => {
+                  console.log('olá mundo');
+                }}
+              />
+            </HeaderInnerWrapper>
+          </CenterWrapper>
+          <ReadingBar />
+        </HeaderRelative>
       </HeaderWrapper>
-      <ReadingBar />
     </>
   );
 };
