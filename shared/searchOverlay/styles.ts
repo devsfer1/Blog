@@ -28,3 +28,13 @@ export const CloseButton = styled(CloseOutline)`
   margin-left: auto;
   cursor: pointer;
 `
+
+export const TextInput = styled.input`
+  width: 100%;
+  height: 40px;
+  border: none;
+  border: 1px solid #D72323;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+`

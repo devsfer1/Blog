@@ -11,9 +11,11 @@ const PostPage = ({
   frontmatter: { title, date, cover_image },
   slug,
   content,
+  posts,
 }) => {
+
   return (
-    <Page title={title}>
+    <Page title={title} posts={posts}>
       <PostWrapper>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
@@ -54,11 +56,37 @@ export async function getStaticProps({ params: { slug } }) {
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
+  // Get files from the posts dir
+  const files = fs.readdirSync(path.join('posts'));
+
+  const sortByDate = (a, b) => {
+    return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+  };
+
+  const posts = files.map((filename) => {
+    // Create slug
+    const slug = filename.replace('.md', '');
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join('posts', filename),
+      'utf-8'
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
   return {
     props: {
       frontmatter,
       slug,
       content,
+      posts,
     },
   };
 }

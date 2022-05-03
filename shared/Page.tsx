@@ -8,9 +8,10 @@ import Head from 'next/head';
 type PageProps = {
   title: string;
   children: React.ReactNode;
+  posts: any;
 };
 
-export const Page = ({ title, children }: PageProps) => {
+export const Page = ({ title, posts, children }: PageProps) => {
   return (
     <>
       <Head>
@@ -20,7 +21,7 @@ export const Page = ({ title, children }: PageProps) => {
       <Header />
       <CenterWrapper>{children}</CenterWrapper>
       <Footer />
-      <SearchOverlay />
+      <SearchOverlay posts={posts} />
     </>
   );
 };

@@ -35,3 +35,9 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #D72323;
 }
+
+.post-body p  {
+
+  font-size: 18px;
+  line-height: 1.6;
+}

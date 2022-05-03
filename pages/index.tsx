@@ -10,7 +10,7 @@ const Home: NextPage = ({ posts }) => {
 
   return (
     <>
-      <Page title={'Home | Blog'} >
+      <Page posts={posts} title={'Home | Blog'} >
         <HomeWrapper>
           <HomeDescription />
           <HomeInnerWrapper>
