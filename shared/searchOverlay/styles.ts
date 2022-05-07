@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
+  
 
   ${({ active }) => active && `
     height: 100vh;
@@ -19,6 +20,24 @@ export const Wrapper = styled.div`
     top: 0;
     padding: 40px;
   `}
+`
+
+export const InnerWrapper = styled.div`
+  display: none;
+  ${({ active }) => active && `
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  `}
+`
+
+export const PostWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 0.32fr));
+  gap: 30px;
+  overflow-y: scroll;
+  height: 100vh;
 `
 
 export const CloseButton = styled(CloseOutline)`
@@ -37,4 +56,7 @@ export const TextInput = styled.input`
   border-radius: 5px;
   padding: 0 10px;
   font-size: 16px;
+  margin-bottom: 46px;
+  width: 40%;
+  align-self: center;
 `

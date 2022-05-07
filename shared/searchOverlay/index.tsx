@@ -1,7 +1,13 @@
-import { Wrapper, TextInput, CloseButton } from './styles';
-import { useSelector } from 'react-redux';
+import {
+  Wrapper,
+  InnerWrapper,
+  TextInput,
+  CloseButton,
+  PostWrapper,
+} from './styles';
+import { useSelector, useDispatch } from 'react-redux';
 import { searchOverlay, toggleOverlay } from '../../redux/searchSlice';
-import { useDispatch } from 'react-redux';
+import { CenterWrapper, Page, Post, Pagination } from '@/shared';
 
 type SearchOverlayProps = {
   posts: any;
@@ -15,8 +21,15 @@ const SearchOverlay = ({ posts }: SearchOverlayProps) => {
 
   return (
     <Wrapper active={active}>
-      <CloseButton onClick={() => dispatch(toggleOverlay())} />
-      <TextInput placeholder={'Search for posts...'} />
+      <InnerWrapper active={active}>
+        <CloseButton onClick={() => dispatch(toggleOverlay())} />
+        <TextInput placeholder={'Search for posts...'} />
+        <PostWrapper>
+          {posts.map((post, index) => (
+            <Post key={index} post={post} />
+          ))}
+        </PostWrapper>
+      </InnerWrapper>
     </Wrapper>
   );
 };
