@@ -12,12 +12,8 @@ const Home: NextPage = ({ posts }) => {
     <>
       <Page posts={posts} title={'Home | Blog'} >
         <HomeWrapper>
-          <HomeDescription />
-          <HomeInnerWrapper>
-            {posts.map((post, index) => (
-              <Post key={index} post={post} />
-            ))}
-          </HomeInnerWrapper>
+          
+          
           <Pagination />
         </HomeWrapper>
       </Page>

@@ -30,14 +30,14 @@ export const HeaderInnerWrapper = styled.div`
 `
 
 export const HeaderLink = styled.a`
-  color: #943434;
+  color: black;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 `
 
 export const LogoWrapper = styled.a`
-  width: 200px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: relative;
 `
 

@@ -5,7 +5,7 @@ import SearchOverlay from './searchOverlay';
 import CenterWrapper from './centerWrapper';
 import Head from 'next/head';
 
-type PageProps = {
+export type PageProps = {
   title: string;
   children: React.ReactNode;
   posts: any;
@@ -20,7 +20,7 @@ export const Page = ({ title, posts, children }: PageProps) => {
       </Head>
       <Header />
       <CenterWrapper>{children}</CenterWrapper>
-      <Footer />
+      {/* <Footer /> */}
       <SearchOverlay posts={posts} />
     </>
   );
