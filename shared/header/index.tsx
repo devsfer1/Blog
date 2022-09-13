@@ -58,7 +58,7 @@ const Header = () => {
                     src={'/logo-text.png'}
                     layout='fill'
                     alt={'logo'}
-                    objectFit='cover'
+                    objectFit='contain'
                   />
                 </LogoWrapper>
               </Link>

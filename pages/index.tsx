@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { CenterWrapper, Page, Post, SearchOverlay, Pagination } from '@/shared';
-import { HomeWrapper, HomeInnerWrapper, HomeDescription } from '@/layout';
+import { HomeWrapper, HomeFeatured } from '@/layout';
 
 const Home: NextPage = ({ posts }) => {
 
@@ -12,9 +12,7 @@ const Home: NextPage = ({ posts }) => {
     <>
       <Page posts={posts} title={'Home | Blog'} >
         <HomeWrapper>
-          
-          
-          <Pagination />
+          <HomeFeatured />
         </HomeWrapper>
       </Page>
     </>
