@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-interface PostImageWrapperProps {
+interface HomeFeaturedProps {
   isLarge?: boolean;
 }
 
@@ -19,38 +19,13 @@ export const FeaturedItem = styled.div`
   border: 1px solid black;
 `
 
-export const ItemOne = styled.div`
+export const Item = styled.div<HomeFeaturedProps>`
   border: 1px solid black;
-  grid-column: 1 / 3;
-  grid-row: 1 / 4;
-  
-`
-export const ItemTwo = styled.div`
-  grid-column: 3 / 5;
-  border: 1px solid black;
-`
-export const ItemThree = styled.div`
-  grid-column: 3 / 5;
-  border: 1px solid black;
-`
-export const ItemFour = styled.div`
-  border: 1px solid black;
-  grid-column: 3 / 5;
+  grid-column: ${props => props.isLarge ? '1/3' : '3/5'};
+  grid-row: ${props => props.isLarge && '1/4'};
 `
 
-export const LargePostImageWrapper = styled.div`
-  width: 100%;
-  height: 55%;
-  position: relative;
-`
-
-export const MediumPostImageWrapper = styled.div`
-  width: 40%;
-  height: 100%;
-  position: relative;
-`
-
-export const PostImageWrapper = styled.div<PostImageWrapperProps>`
+export const PostImageWrapper = styled.div<HomeFeaturedProps>`
   width: ${props => props.isLarge ? "100%" : "40%"};
   height: ${props => props.isLarge ? "55%" : "100%"};
   position: relative;

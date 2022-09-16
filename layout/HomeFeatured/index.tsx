@@ -1,30 +1,30 @@
-import { Container, FeaturedItem, ItemOne, ItemTwo, ItemThree, ItemFour, LargePostImageWrapper, MediumPostImageWrapper, PostImageWrapper } from './styles'
+import { Container, FeaturedItem, Item, PostImageWrapper } from './styles'
 import Image from 'next/image';
 
 
 const HomeFeatured = () => {
   return (
     <Container>
-      <ItemOne>
+      <Item isLarge>
         <PostImageWrapper isLarge>
           <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
         </PostImageWrapper>
-      </ItemOne>
-      <ItemTwo>
+      </Item>
+      <Item>
         <PostImageWrapper>
           <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
         </PostImageWrapper>
-      </ItemTwo>
-      <ItemThree>
+      </Item>
+      <Item>
         <PostImageWrapper>
           <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
         </PostImageWrapper>
-      </ItemThree>
-      <ItemFour>
+      </Item>
+      <Item>
         <PostImageWrapper>
           <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
         </PostImageWrapper>
-      </ItemFour>
+      </Item>
      
     </Container>
   )
