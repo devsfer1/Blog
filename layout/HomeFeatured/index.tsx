@@ -1,4 +1,4 @@
-import { Container, FeaturedItem, ItemOne, ItemTwo, ItemThree, ItemFour, LargePostImageWrapper, MediumPostImageWrapper } from './styles'
+import { Container, FeaturedItem, ItemOne, ItemTwo, ItemThree, ItemFour, LargePostImageWrapper, MediumPostImageWrapper, PostImageWrapper } from './styles'
 import Image from 'next/image';
 
 
@@ -6,24 +6,24 @@ const HomeFeatured = () => {
   return (
     <Container>
       <ItemOne>
-        <LargePostImageWrapper>
+        <PostImageWrapper isLarge>
           <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
-        </LargePostImageWrapper>
+        </PostImageWrapper>
       </ItemOne>
       <ItemTwo>
-        <MediumPostImageWrapper>
-            <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
-        </MediumPostImageWrapper>
+        <PostImageWrapper>
+          <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
+        </PostImageWrapper>
       </ItemTwo>
       <ItemThree>
-        <MediumPostImageWrapper>
-            <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
-        </MediumPostImageWrapper>
+        <PostImageWrapper>
+          <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
+        </PostImageWrapper>
       </ItemThree>
       <ItemFour>
-        <MediumPostImageWrapper>
-            <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
-        </MediumPostImageWrapper>
+        <PostImageWrapper>
+          <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
+        </PostImageWrapper>
       </ItemFour>
      
     </Container>
