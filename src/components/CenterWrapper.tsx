@@ -1,10 +1,10 @@
-import { Wrapper, InnerWrapper } from './styles'
+import { Wrapper, InnerWrapper } from '../utils/styles/CenterWrapper'
 
 type CenterWrapperProps = {
   children: React.ReactNode
 }
 
-const CenterWrapper = (props: CenterWrapperProps) => {
+export const CenterWrapper = (props: CenterWrapperProps) => {
   const { children } = props
 
   return (

@@ -1,6 +1,6 @@
-import { NextPage, PrevPage, Wrapper, Text } from './styles';
+import { NextPage, PrevPage, Wrapper, Text } from '../utils/styles/Pagination';
 
-const Pagination = () => {
+export const Pagination = () => {
   return (
     <Wrapper>
       

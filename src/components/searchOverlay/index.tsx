@@ -7,7 +7,7 @@ import {
 } from './styles';
 import { useSelector, useDispatch } from 'react-redux';
 import { searchOverlay, toggleOverlay } from '../../redux/searchSlice';
-import { CenterWrapper, Page, Post, Pagination } from '@/shared';
+import { CenterWrapper, Page, Post, Pagination } from '../../components';
 
 type SearchOverlayProps = {
   posts: any;

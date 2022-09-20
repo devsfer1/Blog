@@ -1,4 +1,4 @@
-import { Container, FeaturedItem, Item, PostImageWrapper } from './styles'
+import { Container, FeaturedItem, Item, PostImageWrapper, PostTitle } from './styles'
 import Image from 'next/image';
 
 
@@ -9,6 +9,7 @@ const HomeFeatured = () => {
         <PostImageWrapper isLarge>
           <Image src={'/post_1.jpg'} layout='fill' objectFit='cover' />
         </PostImageWrapper>
+        <PostTitle>Olá mundo</PostTitle>
       </Item>
       <Item>
         <PostImageWrapper>

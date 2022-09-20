@@ -1,17 +1,17 @@
 import React from 'react';
-import Header from './header';
-import Footer from './footer';
+import Header from './Header';
+import Footer from './Footer';
 import SearchOverlay from './searchOverlay';
-import CenterWrapper from './centerWrapper';
+import CenterWrapper from './CenterWrapper';
 import Head from 'next/head';
 
 export type PageProps = {
   title: string;
   children: React.ReactNode;
-  posts: any;
+
 };
 
-export const Page = ({ title, posts, children }: PageProps) => {
+export const Page = ({ title, children }: PageProps) => {
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ export const Page = ({ title, posts, children }: PageProps) => {
       <Header />
       <CenterWrapper>{children}</CenterWrapper>
       {/* <Footer /> */}
-      <SearchOverlay posts={posts} />
+      
     </>
   );
 };

@@ -1,6 +1,0 @@
-export { default as HomeWrapper } from './HomeWrapper'
-export { default as HomeInnerWrapper } from './HomeInnerWrapper'
-export { default as HomeDescription } from './HomeDescription'
-export { default as HomeFeatured } from './HomeFeatured'
-export { default as PostImageCover } from './PostImageCover'
-export { default as PostWrapper } from './PostWrapper'

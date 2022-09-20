@@ -8,13 +8,13 @@ import {
   Bar,
   SearchButton,
   View,
-} from './styles';
-import { CenterWrapper } from '@/shared';
+} from '../utils/styles/Header';
+import { CenterWrapper } from './CenterWrapper';
 import { BiSearch } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import Image from 'next/image';
-import { toggleOverlay } from '../../redux/searchSlice';
+import { toggleOverlay } from '../redux/searchSlice';
 
 const headerItems = [
   { id: 1, name: 'Home' },
@@ -43,7 +43,7 @@ const ReadingBar = () => {
   return <Bar style={{ width: width + '%' }}></Bar>;
 };
 
-const Header = () => {
+export const Header = () => {
   const dispatch = useDispatch();
 
   return (

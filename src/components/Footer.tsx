@@ -8,9 +8,9 @@ import {
   LinkedinLink,
   EmailLink,
   CopyRight,
-} from './styles';
+} from '../utils/styles/Footer';
 import Link from 'next/link';
-import { CenterWrapper } from '@/shared';
+import { CenterWrapper } from './CenterWrapper';
 
 const footerItems = [
   { id: 1, name: 'Terms of Use' },
@@ -19,7 +19,7 @@ const footerItems = [
   { id: 4, name: 'About' },
 ];
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <Wrapper>
       <CenterWrapper>

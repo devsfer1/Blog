@@ -11,6 +11,7 @@ export const Container = styled.div`
   gap: 60px;
   width: 100%;
   margin-top: 120px;
+  
 `
 
 export const FeaturedItem = styled.div`
@@ -29,4 +30,8 @@ export const PostImageWrapper = styled.div<HomeFeaturedProps>`
   width: ${props => props.isLarge ? "100%" : "40%"};
   height: ${props => props.isLarge ? "55%" : "100%"};
   position: relative;
+`
+
+export const PostTitle = styled.h3`
+  font-size: 24px;
 `
