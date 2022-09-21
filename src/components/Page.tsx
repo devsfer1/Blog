@@ -21,7 +21,6 @@ export const Page = ({ title, children }: PageProps) => {
       <Header />
       <CenterWrapper>{children}</CenterWrapper>
       {/* <Footer /> */}
-      
     </>
   );
 };
