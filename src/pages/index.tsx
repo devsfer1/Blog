@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { CenterWrapper, Page, SearchOverlay, Pagination } from '../components';
+import { CenterWrapper, Page, Pagination } from '../components';
 import { HomeWrapper, HomeFeatured } from '../layout';
 
 const Home: NextPage = () => {

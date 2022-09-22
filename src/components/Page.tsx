@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import SearchOverlay from './searchOverlay';
 import CenterWrapper from './CenterWrapper';
 import Head from 'next/head';
 
@@ -21,7 +20,6 @@ export const Page = ({ title, children }: PageProps) => {
       <Header />
       <CenterWrapper>{children}</CenterWrapper>
       {/* <Footer /> */}
-      
     </>
   );
 };
