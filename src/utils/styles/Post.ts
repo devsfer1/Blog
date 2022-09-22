@@ -27,6 +27,7 @@ export const Item = styled.div<HomeFeaturedProps>`
   gap: 20px;
 `
 
+
 export const PostImageWrapper = styled.div<HomeFeaturedProps>`
   width: ${props => props.isLarge ? "100%" : "40%"};
   height: ${props => props.isLarge ? "65%" : "100%"};

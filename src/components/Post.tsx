@@ -23,8 +23,6 @@ export const Post: React.FC<PostProps> = (props) => {
     locale: 'en-US',
   })
 
-
-
   return (
     <Item isLarge={isLarge}>
         <PostImageWrapper isLarge={isLarge}>

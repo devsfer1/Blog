@@ -34,6 +34,7 @@ export const InnerWrapper = styled.div`
   flex: 1;
   width: 100%;
   margin: auto;
+  flex-direction: column;
 
   @media ${device.mobileS} {
     
