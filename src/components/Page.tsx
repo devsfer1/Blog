@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import SearchOverlay from './searchOverlay';
 import CenterWrapper from './CenterWrapper';
 import Head from 'next/head';
 

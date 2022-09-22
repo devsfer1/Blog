@@ -52,7 +52,7 @@ export const Bar = styled.div`
 `;
 
 export const SearchButton = styled(Search)`
-  color: #D72323;
+  color: black;
   width: 30px;
   height: 30px;
   margin-left: auto;
