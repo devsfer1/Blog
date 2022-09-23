@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.a`
    display: flex;
-   flex-direction: column;
    width: 100%;
    border: 1px solid #D7D7D7;
    border-radius: 6px;
+   overflow: hidden;
+   height: 210px;
 `
 
 export const ImageWrapper = styled.div`
-  width: 100%;
-  height: 200px;
+  width: 70%;
   position: relative;
 `
 

@@ -23,14 +23,14 @@ export const PostCard: React.FC<PostCardProps> = (props) => {
   })
 
   return (
-    <Wrapper>
+    <Wrapper href={'/'}>
         <ImageWrapper>
           <Image alt={'any'} src={'/post_1.jpg'} layout='fill' objectFit='cover' />
         </ImageWrapper>
         <InnerWrapper >
-          <PostDate>{formatDate}</PostDate>
           <Title>{title}</Title>
           {subtitle && <Subtitle>{subtitle}</Subtitle>}
+          <PostDate>{formatDate}</PostDate>
         </InnerWrapper>
     </Wrapper>
   )

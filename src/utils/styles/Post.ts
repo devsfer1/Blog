@@ -13,7 +13,7 @@ export const Container = styled.div`
   margin-top: 120px;
 `
 
-export const FeaturedItem = styled.div`
+export const FeaturedItem = styled.a`
   width: 200px;
   height: 300px;
   border: 1px solid black;
