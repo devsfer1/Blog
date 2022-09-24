@@ -37,7 +37,7 @@ export const Footer = () => {
             ))}
           </LinksWrapper>
           <CopyRight>
-            © {new Date().getFullYear()} Bear Code Blog. All rights reserved.
+            © {new Date().getFullYear()} Blog. All rights reserved.
           </CopyRight>
         </InnerWrapper>
       </CenterWrapper>

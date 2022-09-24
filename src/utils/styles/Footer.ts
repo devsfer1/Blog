@@ -3,7 +3,7 @@ import { LinkedinSquare, Github } from 'styled-icons/boxicons-logos';
 import { Envelope } from '@styled-icons/boxicons-regular';
 
 export const Wrapper = styled.div`
-  background-color: #f0f0f0;
+  background-color: #e5e5e5;
   padding: 60px 20px;
   margin-top: 120px;
 `;
@@ -29,7 +29,7 @@ export const LinksWrapper = styled.div`
 `
 
 export const FooterLink = styled.a`
-  color: #943434;
+  color: black;
   font-weight: 600;
   font-size: 16px;
 `
@@ -53,5 +53,5 @@ export const EmailLink = styled(Envelope)`
 `
 
 export const CopyRight = styled.p`
-  color: #943434;
+  color: #454545;
 `

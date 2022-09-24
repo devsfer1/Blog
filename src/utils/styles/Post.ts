@@ -19,13 +19,14 @@ export const FeaturedItem = styled.div`
   border: 1px solid black;
 `
 
-export const Item = styled.div<HomeFeaturedProps>`
+export const Item = styled.a<HomeFeaturedProps>`
   grid-column: ${props => props.isLarge ? '1/3' : '3/5'};
   grid-row: ${props => props.isLarge && '1/4'};
   display: flex;
   flex-direction: ${props => props.isLarge && 'column'};
   gap: 20px;
 `
+
 
 export const PostImageWrapper = styled.div<HomeFeaturedProps>`
   width: ${props => props.isLarge ? "100%" : "40%"};

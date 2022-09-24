@@ -17,24 +17,7 @@ a {
   padding: 0;
 }
 
-::-webkit-scrollbar {
-  width: 14px;
-}
 
-::-webkit-scrollbar-track {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin: 0px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #fa5f5f;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #D72323;
-}
 
 .post-body p  {
 

@@ -67,11 +67,6 @@ export const Header = () => {
                   <HeaderLink>{item.name}</HeaderLink>
                 </Link>
               ))}
-              <SearchButton
-                onClick={() => {
-                  dispatch(toggleOverlay());
-                }}
-              />
             </HeaderInnerWrapper>
           </CenterWrapper>
           <ReadingBar />
