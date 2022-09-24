@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Wrapper, TextInput, TagTitle, TagItem } from './styles'
+import { Wrapper, TextInput, TagTitle, TagItem, Separator } from './styles'
 
 type HomeSearchRow = {
 
@@ -10,12 +10,17 @@ const HomeSearchRow: FC<HomeSearchRow> = () => {
     <Wrapper>
       <TextInput />
       <TagTitle>Blog tags</TagTitle>
-      <TagItem>Javascript</TagItem>
-      <TagItem>Vue.JS</TagItem>
-      <TagItem>Tutorials</TagItem>
-      <TagItem>News</TagItem>
-      <TagItem>Node</TagItem>
-      <TagItem>Articles</TagItem>
+      <TagItem href={'/'}>Javascript</TagItem>
+      <Separator />
+      <TagItem href={'/'}>Vue.JS</TagItem>
+      <Separator />
+      <TagItem href={'/'}>Tutorials</TagItem>
+      <Separator />
+      <TagItem href={'/'}>News</TagItem>
+      <Separator />
+      <TagItem href={'/'}>Node</TagItem>
+      <Separator />
+      <TagItem href={'/'}>Articles</TagItem>
     </Wrapper>
   )
 }

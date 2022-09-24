@@ -19,9 +19,16 @@ export const TagTitle = styled.p`
   padding-bottom: 10px;
 `
 
-export const TagItem = styled.p`
+export const TagItem = styled.a`
   font-size: 16px;
   padding: 15px;
   font-weight: bold;
   color: black;
+  display: flex;
+`
+
+export const Separator = styled.div`
+  background-color: black;
+  width: 100%;
+  height: 1px;
 `

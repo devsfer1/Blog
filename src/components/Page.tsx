@@ -3,14 +3,17 @@ import Header from './Header';
 import Footer from './Footer';
 import CenterWrapper from './CenterWrapper';
 import Head from 'next/head';
+import { Wrapper } from '../utils/styles/Page'
 
 export type PageProps = {
   title: string;
   children: React.ReactNode;
+  center?: boolean;
 
 };
 
-export const Page = ({ title, children }: PageProps) => {
+export const Page = ({ title, children, center }: PageProps) => {
+
   return (
     <>
       <Head>
@@ -18,7 +21,8 @@ export const Page = ({ title, children }: PageProps) => {
         <link rel='icon' href='/logo.png' />
       </Head>
       <Header />
-      <CenterWrapper>{children}</CenterWrapper>
+      {center ? <CenterWrapper>{children}</CenterWrapper> : <Wrapper>{children}</Wrapper>}
+    
       {/* <Footer /> */}
     </>
   );

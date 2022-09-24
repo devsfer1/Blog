@@ -20,6 +20,12 @@ export const Title = styled.h3`
 export const Subtitle = styled.p`
   font-size: 14px;
   line-height: 1.5;
+  letter-spacing: -0.3px;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 `
 
 export const PostDate = styled.p`

@@ -13,13 +13,13 @@ export const Container = styled.div`
   margin-top: 120px;
 `
 
-export const FeaturedItem = styled.a`
+export const FeaturedItem = styled.div`
   width: 200px;
   height: 300px;
   border: 1px solid black;
 `
 
-export const Item = styled.div<HomeFeaturedProps>`
+export const Item = styled.a<HomeFeaturedProps>`
   grid-column: ${props => props.isLarge ? '1/3' : '3/5'};
   grid-row: ${props => props.isLarge && '1/4'};
   display: flex;
