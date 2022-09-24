@@ -15,10 +15,10 @@ export const ImageWrapper = styled.div`
 `
 
 export const Title = styled.h3`
-  font-size: 28px;
+  font-size: 20px;
 `
 export const Subtitle = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 `
 
